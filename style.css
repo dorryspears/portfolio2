@@ -177,32 +177,107 @@ a:focused {
 
 .section {
   margin-left: 10%;
+  margin-bottom: 100px;
 }
 
 .project-showcase {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 75px;
+  flex-wrap: wrap;
 }
 .project-showcase h3 {
   font-size: 1.5em;
 }
 
 .project-graphic {
+  margin-top: 50px;
   width: 400px;
   height: 300px;
   overflow: hidden;
   border-radius: 5px;
-  box-shadow: 3px 3px 5px #0000006b;
+  box-shadow: 3px 3px 5px #00000036;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #p-1 {
   background-image: url("./images/Capture.PNG");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+#p-2 {
+  background-image: url("./images/crowdfuncing.PNG");
+}
+
+#p-3 {
+  background-image: url("./images/iptracker.PNG");
+}
+
+#logo-timeline {
+  margin: 0 auto;
+}
+
+#red-vert {
+  margin: 0 5px;
+  height: 14px;
+  width: 2px;
+  background-color: #ba2d2d;
+}
+
+#chief {
+  width: 70px;
+}
+
+.job-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.job-info img {
+  margin-right: 20px;
+}
+
+.work-info ul {
+  position: relative;
+  margin-left: 40%;
+  top: -25px;
+}
+
+.work-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.work-title h3 {
+  font-size: 1.5em;
+  margin: 0;
+  width: fit-content;
+  display: inline;
+}
+
+.main-info {
+  display: flex;
+  align-items: center;
+}
+.main-info span {
+  font-style: italic;
+}
+
+.time-in {
+  font-size: 0.8em;
+  position: relative;
+  top: -21px;
+  font-style: italic;
+  color: #00000085;
+}
+
+#best {
+  width: 120px;
+  height: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */
