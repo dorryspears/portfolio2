@@ -1,15 +1,12 @@
 $base-red: #ba2d2d
 body
+    overflow-x: hidden
     margin: 0
     padding: 0
     font-family: 'Archivo'
 
 a 
     cursor: pointer
-
-.main-page
-    display: flex
-    flex-direction: row
 
 //A tag normalized
 a
@@ -19,14 +16,21 @@ a:visited
 a:focused
     color: black
 //------------------
+nav 
+    position: fixed
+
+.main-content-box
+    margin-left: 160px
+    position: relative
+
+
 
 .side-nav 
-    position: fixed
     height: 100vh
     display: flex
     flex-direction: column            
     width: 160px
-    position: fixed
+    z-index: 1
     box-shadow: 1px 0 3px rgba(0, 0, 0, 0.24)
     > * 
         text-align: center
@@ -54,9 +58,12 @@ a:focused
         width: 50px
         margin: 0 0 5px 0
 
-.main-content-box 
-    width: 100%
+
+
+#test 
+    height: 100px
     margin-left: 160px
+    background-color: red
 
 #welcome-section
     background-image: url("./images/background.png")
@@ -64,6 +71,9 @@ a:focused
     background-position: 90%
     background-repeat: no-repeat
     height: 100vh
+    z-index: -4
+    position: relative
+    left: 20px
 
 #intro-part
     position: relative
@@ -152,8 +162,8 @@ a:focused
     border-bottom: 4px solid $base-red
 
 .section
-    margin-left: 10%
-    margin-bottom: 100px
+    margin: 0 10%
+    margin-bottom: 150px
 
 
 .project-showcase
@@ -189,7 +199,9 @@ a:focused
 //Exerience Section
 #logo-timeline
     margin: 0 auto
-
+    display: flex
+    flex-direction: column
+    align-items: center
 
 #red-vert 
     margin: 0 5px
@@ -197,12 +209,8 @@ a:focused
     width: 2px
     background-color: $base-red 
 
-
 #chief
     width: 70px
-
-
-
 
 .job-info 
     display: flex 
@@ -212,16 +220,19 @@ a:focused
         margin-right: 20px
 
 .work-info
+    margin-bottom: 50px
+    width: fit-content
     ul
         position: relative
-        margin-left: 40%
+        margin-left: 15%
         top:-25px
 
 .work-title
     display: flex
     justify-content: center
-    align-items: center
+    align-items: flex-start
     flex-direction: column
+    
     h3
         font-size: 1.5em
         margin: 0
@@ -234,6 +245,13 @@ a:focused
     span
         font-style: italic
 
+#best-time 
+    top: -6px
+    left: 140px
+
+#chief-time
+    left: 91px
+
 .time-in
     font-size: .8em
     position: relative
@@ -244,3 +262,24 @@ a:focused
 #best
     width: 120px
     height: 45px    
+
+#best-catch-de
+    top: -10px
+
+#chief-de
+    top: -25px
+
+
+//Skills Section
+.skills-box
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    width: 70%
+    margin: 0 auto
+    > *
+        margin: 10px
+        cursor: pointer
+        transition: .2s
+    > *:hover
+        transform: scale(1.1)
