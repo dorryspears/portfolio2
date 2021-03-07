@@ -32,7 +32,6 @@ nav
     display: flex
     flex-direction: column            
     width: 160px
-    z-index: 100
     box-shadow: 1px 0 3px rgba(0, 0, 0, 0.24)
     > * 
         text-align: center
@@ -74,12 +73,15 @@ nav
     background-repeat: no-repeat
     height: 100vh
     position: relative
+    padding-left: 5px
+    background-clip: content-box
 
 #intro-part
     position: relative
     top: 30%
     left: 10%
     font-size: 1.2em
+    z-index: 10
     > * 
         margin: 15px 0 0 0
     h1
@@ -95,6 +97,7 @@ nav
     > *, > a > *
         width: 120px
         height: 50px
+        
 
 
 .mini-about
@@ -112,6 +115,7 @@ nav
     border-radius: 3px
     box-sizing: border-box
     cursor: pointer
+    box-shadow: 1px 2px 3px #00000015
 
 #cv-button , .github-button
     cursor: pointer
@@ -120,6 +124,7 @@ nav
     align-items: center
     justify-content: center
     border-radius: 2px
+    box-shadow: 1px 2px 3px #00000015
     span
         font-weight: 700
         color: white
@@ -302,12 +307,14 @@ nav
         font-size: 2.5em
         font-weight: 700
         text-align: center
+        margin-top: 0
         strong 
             color: $base-red
+            font-style: italic
 
 .contact-ways
     display: flex
-    justify-content: center
+    justify-content: space-between
 
 .contact-info
     position: relative
@@ -335,7 +342,7 @@ footer
     padding: 30px
     display: flex
     justify-content: center 
-    align-items: center 
+    align-items: center
     h3
         margin: 0
         color: white

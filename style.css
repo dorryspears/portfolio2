@@ -38,7 +38,6 @@ nav {
   display: flex;
   flex-direction: column;
   width: 160px;
-  z-index: 100;
   box-shadow: 1px 0 3px rgba(0, 0, 0, 0.24);
 }
 .side-nav > * {
@@ -85,6 +84,8 @@ nav {
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
+  padding-left: 5px;
+  background-clip: content-box;
 }
 
 #intro-part {
@@ -92,6 +93,7 @@ nav {
   top: 30%;
   left: 10%;
   font-size: 1.2em;
+  z-index: 10;
 }
 #intro-part > * {
   margin: 15px 0 0 0;
@@ -128,6 +130,7 @@ nav {
   border-radius: 3px;
   box-sizing: border-box;
   cursor: pointer;
+  box-shadow: 1px 2px 3px #00000015;
 }
 
 #cv-button, .github-button {
@@ -137,6 +140,7 @@ nav {
   align-items: center;
   justify-content: center;
   border-radius: 2px;
+  box-shadow: 1px 2px 3px #00000015;
 }
 #cv-button span, .github-button span {
   font-weight: 700;
@@ -348,14 +352,16 @@ nav {
   font-size: 2.5em;
   font-weight: 700;
   text-align: center;
+  margin-top: 0;
 }
 #contact-box h3 strong {
   color: #ba2d2d;
+  font-style: italic;
 }
 
 .contact-ways {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .contact-info {
@@ -445,6 +451,7 @@ footer h3 {
   }
   .skills-box img {
     width: 75px;
+    height: 75px;
   }
 
   .section {
@@ -523,6 +530,19 @@ footer h3 {
   }
 }
 @media only screen and (max-width: 550px) {
+  #contact.section {
+    margin-bottom: 50px;
+  }
+
+  .contact-ways {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-ways > div {
+    margin-bottom: 60px;
+  }
+
   .nav-block img {
     width: 30px;
   }
@@ -627,6 +647,18 @@ footer h3 {
 
   #nav-title {
     margin: 0;
+  }
+
+  .foot-nav {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .foot-nav > a {
+    margin: 0 0 5px 0;
+  }
+
+  .foot-vert {
+    display: none;
   }
 }
 
