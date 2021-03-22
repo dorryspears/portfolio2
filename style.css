@@ -273,6 +273,8 @@ nav {
   margin-left: 15%;
   top: -25px;
   z-index: -10;
+  line-height: 1.6;
+  margin-top: 10px;
 }
 
 .work-title {
@@ -361,7 +363,8 @@ nav {
 
 .contact-ways {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contact-info {
@@ -371,19 +374,21 @@ nav {
   align-items: center;
   justify-content: center;
   margin: 0 40px;
+  height: fit-content;
+  flex-wrap: wrap;
+}
+.contact-info a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .contact-info img {
   width: 100px;
+  height: 100px;
 }
-.contact-info span {
-  margin-top: 20px;
-  position: absolute;
-  top: 100px;
-  font-style: italic;
-  font-size: 0.8em;
-  text-align: center;
+.contact-info p {
   white-space: nowrap;
-  font-weight: 500;
 }
 
 footer {
