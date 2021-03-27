@@ -206,6 +206,13 @@ nav {
 }
 .project-showcase h3 {
   font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.project-description {
+  margin-top: 10px;
+  max-width: 230px;
+  line-height: 1.6;
 }
 
 .project-graphic {
